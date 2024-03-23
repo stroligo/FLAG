@@ -20,6 +20,7 @@
                     <ul class=" w-full flex flex-col  text-white gap-3 text-lg mt-20">
                         <a href="<?php echo home_url(); ?>"><li>Home</li></a>
                         <a href="chart"><li>Chart</li></a>
+                        <a href="chart"><li>Chart</li></a>
                     </ul>
 
                     <div class="flex gap-2 my-12 items-center justify-between">
