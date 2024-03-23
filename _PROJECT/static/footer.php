@@ -1,8 +1,8 @@
 
-<footer class="bg-cafe-blue-800">
+<footer class="bg-flag-orange">
     <section class="mx-auto p-6 text-white">
         <div>
-        Components - Café.art.br
+        Project for study: FLAG by Stroligo
         </div>
         
     </section>

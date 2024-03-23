@@ -10,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="language" content="pt-br">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Framework Café">
+    <meta property="og:title" content="Project for study: FLAG">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Titulo do site -->
-    <title>Café Components</title>
+    <title>Study FLAG</title>
     <!-- Carregando o favicon-->
     <link rel="icon" type="image/png" href="<?php tu(); ?>/assets/images/favicon.png">
     <link href="<?php tu(); ?>/assets/images/favicon.png" rel="shortcut icon">

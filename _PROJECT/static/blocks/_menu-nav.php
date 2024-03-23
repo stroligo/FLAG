@@ -1,6 +1,6 @@
 
 <div class="controller-nav">
-    <nav class="bg-cafe-blue-800 fixed top-0 z-50 w-full min-h-[50px]" id="topo">  
+    <nav class="bg-flag-orange fixed top-0 z-50 w-full min-h-[50px]" id="topo">  
         <div class=" mx-auto flex justify-between p-6 py-4">
             
             <!-- Menu Mobile -->
@@ -10,7 +10,7 @@
 
                     <div class="absolute left-6 top-4 block"> 
                         <a href="<?php echo home_url(); ?>">
-                            <?php svg('logo-cafe',55,40,"fill-white");?> 
+                            <?php svg('logo-flag',55,40,"fill-white");?> 
                         </a>
                     </div>
                     <label for="toggle-menuMobile" class="absolute right-6 top-5 block">
@@ -31,23 +31,18 @@
                             </a>
                         </div>
 
-                        
-                    
                     </div>
 
-                
-                
-            
                 </div>
             </div>
 
             <!-- Menu Desktop -->
-            <div class="flex w-full justify-between">
+            <div class="flex w-full justify-between ">
             
                     <!-- Logo Versão Desktop -->
                     <div class="flex logo">
                         <a href="<?php echo home_url(); ?>">
-                        <?php svg('logo-cafe',55,40,"fill-white");?> 
+                        <?php svg('logo-flag',100,20,"fill-white");?> 
                         </a> 
                     </div>
         

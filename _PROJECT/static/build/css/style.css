@@ -505,9 +505,9 @@ nav ul li{
 }
 nav ul li:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(131 238 167 / var(--tw-border-opacity));
+  border-color: rgb(31 167 238 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(131 238 167 / var(--tw-text-opacity));
+  color: rgb(31 167 238 / var(--tw-text-opacity));
 }
 nav .menuMobile{
   position: absolute;
@@ -519,7 +519,7 @@ nav .menuMobile{
   width: 100%;
   overflow: auto;
   --tw-bg-opacity: 1;
-  background-color: rgb(4 116 116 / var(--tw-bg-opacity));
+  background-color: rgb(31 167 238 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -769,22 +769,12 @@ footer ul li{
 .gap-3{
   gap: 0.75rem !important;
 }
-.whitespace-nowrap{
-  white-space: nowrap !important;
-}
 .rounded{
   border-radius: 0.25rem !important;
 }
-.bg-cafe-green-800{
+.bg-flag-orange{
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(4 116 116 / var(--tw-bg-opacity)) !important;
-}
-.bg-cafe-blue-800{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(35 84 154 / var(--tw-bg-opacity)) !important;
-}
-.fill-cafe-green-800{
-  fill: #047474 !important;
+  background-color: rgb(232 78 15 / var(--tw-bg-opacity)) !important;
 }
 .fill-white{
   fill: #fff !important;
@@ -795,9 +785,6 @@ footer ul li{
 .py-4{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
-}
-.pb-10{
-  padding-bottom: 2.5rem !important;
 }
 .font-mulish{
   font-family: Mulish, sans-serif !important;
@@ -842,114 +829,12 @@ footer ul li{
   transition-duration: 150ms !important;
 }
 /* Base do projeto */
-/* Components */
-/* Ranking Bars */
-.rankingBarsWrap{
-  width: 100%;
-}
-.rankingBarsWrap .rankingItem{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-.rankingBarsWrap .rankingItem .rankingTitle{
-  display: block;
-  text-align: left;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-}
-.rankingBarsWrap .rankingItem .rankingBar{
-  position: relative;
-  display: block;
-  height: 2rem;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-.rankingBarsWrap .rankingItem .rankingBar .bar{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: block;
-  height: 100%;
-}
-.rankingBarsWrap .rankingItem .rankingBar .bar span{
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-left: 0.5rem;
-  display: block;
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-}
-
-/* Simple Donut */
-.donutWrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.donutWrap .donutHighlight{
-  position: absolute;
-  --tw-scale-x: 0;
-  --tw-scale-y: 0;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 0;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.donutWrap .donutHighlight p{
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.donutWrap .donutHighlight p span{
-  display: block;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-}
-.donutWrap .donutHighlight.active{
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 1;
-}
-.donutWrap.active path,
-.donutWrap.active text{
-  opacity: 0.2;
-}
-.donutWrap path,
-.donutWrap text{
-  cursor: pointer;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: linear;
-}
-.donutWrap path.active,
-.donutWrap text.active{
-  opacity: 1;
-}
 @media (min-width: 768px){
-  .md\:mx-2{
-    margin-left: 0.5rem !important;
-    margin-right: 0.5rem !important;
-  }
   .md\:gap-2{
     gap: 0.5rem !important;
   }
 }
 @media (min-width: 1024px){
-  .lg\:mx-8{
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
-  }
   .lg\:flex{
     display: flex !important;
   }
