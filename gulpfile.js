@@ -8,7 +8,6 @@ const uglify = require("gulp-terser");
 const cleanCSS = require("gulp-clean-css");
 const purgecss = require("gulp-purgecss");
 const logSymbols = require("log-symbols");
-const d3 = import("d3");
 
 //Tasks
 
@@ -18,21 +17,21 @@ function devStyles() {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([tailwindcss(options.config.tailwindjs)]))
     .pipe(concat("style.css"))
-    .pipe(dest(options.paths.build.css));
+    .pipe(dest(options.paths.build.css))
+    .pipe(dest(options.paths.wordpress.css));
 }
 function devScriptsClasses() {
   return src([`${options.paths.src.js}/class/*.js`])
     .pipe(concat({ path: "classes.js" }))
-    .pipe(dest(options.paths.build.js));
+    .pipe(dest(options.paths.build.js))
+    .pipe(dest(options.paths.wordpress.js));
 }
 
 function devScripts() {
-  return src([
-    "node_modules/d3/dist/d3.js",
-    `${options.paths.src.js}/*.js`
-  ])
+  return src([`${options.paths.src.js}/*.js`])
     .pipe(concat({ path: "scripts.js" }))
-    .pipe(dest(options.paths.build.js));
+    .pipe(dest(options.paths.build.js))
+    .pipe(dest(options.paths.wordpress.js));
 }
 
 function watchFiles() {

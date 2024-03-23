@@ -1,7 +1,7 @@
 {
-  "name": "gulp-tailwind",
+  "name": "gulp-tailwind-wordpress",
   "version": "1.0.0",
-  "description": "Gulp padrão para tailwind",
+  "description": "Gulp padrão para tailwind + wordpress",
   "main": "gulpfile.js",
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.0",
@@ -9,7 +9,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.13",
-    "d3": "^7.9.0",
+    "d3": "^7.8.4",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
@@ -32,7 +32,10 @@
     "build": "gulp prod",
     "prod": "gulp prod"
   },
-  "author": "Gabriel Stroligo",
+  "author": "Tapronto",
   "license": "ISC",
-  "homepage": "https://stroligo.github.io/"
+  "homepage": "https://tapronto.com.br",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
 }
