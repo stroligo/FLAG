@@ -14,12 +14,8 @@ module.exports = {
       css: "./static/build/css",
       js: "./static/build/js",
     },
-    wordpress: {
-      css: "./wordpress/wp-content/themes/inovahc/css",
-      js: "./wordpress/wp-content/themes/inovahc/js",
-    },
   },
-  content: ["./*.php", "./**/*.php"],
+  content: ["./*.html", "./**/*.html"],
   extend: {
     colors: {
       inovahc: {

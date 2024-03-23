@@ -17,21 +17,18 @@ function devStyles() {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([tailwindcss(options.config.tailwindjs)]))
     .pipe(concat("style.css"))
-    .pipe(dest(options.paths.build.css))
-    .pipe(dest(options.paths.wordpress.css));
+    .pipe(dest(options.paths.build.css));
 }
 function devScriptsClasses() {
   return src([`${options.paths.src.js}/class/*.js`])
     .pipe(concat({ path: "classes.js" }))
-    .pipe(dest(options.paths.build.js))
-    .pipe(dest(options.paths.wordpress.js));
+    .pipe(dest(options.paths.build.js));
 }
 
 function devScripts() {
   return src([`${options.paths.src.js}/*.js`])
     .pipe(concat({ path: "scripts.js" }))
-    .pipe(dest(options.paths.build.js))
-    .pipe(dest(options.paths.wordpress.js));
+    .pipe(dest(options.paths.build.js));
 }
 
 function watchFiles() {
