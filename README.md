@@ -1,2 +1,3 @@
-# flag
-FLAG course study repository
+# FLAG
+
+FLAG course study repository by Gabriel Stroligo
