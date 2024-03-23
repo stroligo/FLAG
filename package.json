@@ -1,7 +1,7 @@
 {
-  "name": "gulp-tailwind-wordpress",
+  "name": "gulp-tailwind",
   "version": "1.0.0",
-  "description": "Gulp padrão para tailwind + wordpress",
+  "description": "Gulp padrão para tailwind",
   "main": "gulpfile.js",
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.0",
@@ -32,10 +32,7 @@
     "build": "gulp prod",
     "prod": "gulp prod"
   },
-  "author": "Tapronto",
+  "author": "Gabriel Stroligo",
   "license": "ISC",
-  "homepage": "https://tapronto.com.br",
-  "dependencies": {
-    "@splidejs/splide": "^4.1.4"
-  }
+  "homepage": "https://stroligo.github.io/"
 }
