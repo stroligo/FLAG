@@ -18,30 +18,19 @@ module.exports = {
   content: ["./*.html", "./**/*.html"],
   extend: {
     colors: {
-      inovahc: {
-        gray: {
-          400: "#4B5563",
-        },
-        green: {
-          50: "#EFFCFB",
-          300: "#83EEA7",
-          500: "#41CC96",
-          600: "#049F84",
-          800: "#047474",
-        },
-        blue: {
-          100: "#D3E2EB",
-          300: "#82A5D1",
-          800: "#23549A",
-        },
-        purple: {
-          100: "#CCBDF1",
-          300: "#AD92E7",
-          800: "#604B8C",
-        },
-      },
+      "flag-red": "#E22739",
+      "flag-orange": "#E84E0F",
+      "flag-rose": "#E01E62",
+      "flag-rose-light": "#DF497C",
+      "flag-lilac": "#C764BD",
+      "flag-blue": "#1FA7EE",
+      "flag-blue-dark": "#4C5DDF",
+      "flag-yellow": "#ECAC00",
+      "flag-cyan": "#15BC8F",
+      "flag-green": "#83B436",
+      "flag-gray": "#6C6C6C",
     },
-    typography: ({ theme }) => ({
+    /*  typography: ({ theme }) => ({
       inovahc: {
         css: {
           "--tw-prose-headings": theme("colors.inovahc.green[800]"),
@@ -60,7 +49,7 @@ module.exports = {
           "--tw-prose-quote-borders": theme("colors.inovahc.green[500]"),
         },
       },
-    }),
+    }), */
     fontFamily: {
       mulish: ["Mulish, sans-serif"],
       poppins: ["Poppins, sans-serif"],

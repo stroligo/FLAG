@@ -1,5 +1,5 @@
 // Front-end - CSS por Gabriel Stroligo
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Base do projeto */
 @layer base {
   html {
@@ -9,7 +9,7 @@
     }
   }
   body {
-    @apply cursor-default font-mulish text-inovahc-gray-400 antialiased;
+    @apply cursor-default  font-mulish text-flag-orange antialiased;
     &.menu-open {
       overflow: hidden;
     }
@@ -29,7 +29,7 @@
     h4,
     h5,
     h6 {
-      @apply font-poppins  text-inovahc-green-800;
+      @apply bg-flag-orange  font-poppins;
       display: block;
       margin-block-start: 1.5em;
       margin-block-end: 0;
@@ -65,7 +65,7 @@
       }
     }
     a {
-      @apply font-bold text-inovahc-green-500 underline;
+      @apply font-bold underline;
     }
     .btn {
       @apply no-underline;
@@ -74,13 +74,13 @@
       @apply font-bold;
     }
     blockquote {
-      @apply flex flex-col  items-center justify-center gap-4 text-center text-xl text-inovahc-purple-800;
+      @apply flex flex-col  items-center justify-center gap-4 text-center text-xl text-flag-lilac;
       &:before {
         @apply block h-[34px] w-[37px] content-[""];
         background-image: url('data:image/svg+xml,<svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.83887" y="7.11182" width="28.5092" height="27.6041" rx="4.52527" transform="rotate(-14.6967 2.83887 7.11182)" fill="%23CCBDF1"/><path d="M12.4925 17.3477C12.4925 13.8976 9.69606 11.1012 6.24657 11.1012C2.79708 11.1012 0 13.8976 0 17.3477C0 20.7978 2.95368 23.7987 6.62991 23.5749C6.38201 24.7733 5.76951 25.9524 5.17514 26.8757C4.90366 27.2971 5.40067 27.7869 5.81667 27.5075C9.31332 25.1664 12.4925 21.5059 12.4925 17.3477Z" fill="%23604B8C"/><path d="M27.1401 17.3476C27.1401 13.8982 24.3437 11.1011 20.8936 11.1011C17.4435 11.1011 14.647 13.8975 14.647 17.3476C14.647 20.7977 17.6007 23.7986 21.2769 23.5749C21.029 24.7733 20.4165 25.9523 19.8221 26.8756C19.5507 27.2971 20.0477 27.7868 20.4637 27.5075C23.9603 25.1663 27.1401 21.5058 27.1401 17.3476Z" fill="%23604B8C"/></svg>');
       }
       &::after {
-        @apply block h-0.5 w-[45px] bg-inovahc-purple-100 content-[""];
+        @apply block h-0.5 w-[45px] bg-flag-lilac content-[""];
       }
     }
     figure {
@@ -95,10 +95,10 @@
     .post-header {
       @apply my-8;
       .post-header-categoria {
-        @apply text-inovahc-green-500;
+        @apply text-flabg-flag-lilac;
       }
       .post-header-titulo {
-        @apply mb-0 font-poppins text-5xl font-bold text-inovahc-green-800;
+        @apply text-flbg-flag-orange mb-0 font-poppins text-5xl font-bold;
       }
       .post-header-info {
         @apply mb-1;
@@ -113,22 +113,22 @@
   nav {
     @apply translate-y-0 transition-all duration-500  ease-in-out;
     ul li {
-      @apply w-fit whitespace-nowrap border-b border-transparent px-1 transition-all duration-300 ease-in-out hover:border-inovahc-green-300 hover:text-inovahc-green-300;
+      @apply w-fit whitespace-nowrap border-b border-transparent px-1 transition-all duration-300 ease-in-out hover:border-flag-green;
     }
 
     /* Formatacao do Menu Responsivo */
     .menuMobile {
-      @apply absolute right-full top-0 z-50 flex  h-screen w-full overflow-auto bg-inovahc-green-800  p-6 text-white transition-all duration-300 ease-linear lg:hidden;
+      @apply absolute right-full top-0 z-50 flex  h-screen w-full overflow-auto bg-flag-orange  p-6 text-white transition-all duration-300 ease-linear lg:hidden;
     }
     #toggle-menuMobile:checked ~ .menuMobile {
       @apply translate-x-full;
     }
 
     .destaque a {
-      @apply flex h-7 w-fit cursor-pointer items-center justify-center rounded-lg border-none bg-inovahc-purple-100 px-3 py-2 text-sm font-semibold leading-3  text-inovahc-green-800 transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none md:bg-white md:py-1;
+      @apply flex h-7 w-fit cursor-pointer items-center justify-center rounded-lg border-none bg-flag-lilac px-3 py-2 text-sm font-semibold  leading-3 transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none md:bg-white md:py-1;
       border: none !important;
       &:hover {
-        @apply border-none bg-inovahc-green-500 text-white;
+        @apply border-none bg-flag-lilac text-white;
         border: none !important;
       }
     }
@@ -141,17 +141,11 @@
       }
     }
   }
-  .scroll-on nav {
-    @apply -translate-y-32 transition-all duration-1000 ease-in-out;
-  }
-  .scroll-up nav {
-    @apply translate-y-0 transition-all duration-500  ease-in-out;
-  }
 
   /* Rodapé */
   footer {
     ul li {
-      @apply w-fit whitespace-nowrap border-b border-white  transition-all duration-300 ease-in-out hover:border-inovahc-green-300 hover:text-inovahc-green-300;
+      @apply w-fit whitespace-nowrap border-b  border-white transition-all duration-300 ease-in-out hover:border-flag-green;
     }
     .destaque {
       @apply border-b;
@@ -162,44 +156,44 @@
 @layer components {
   /*  Botoes / Btn-Menu / White / Outline */
   .btn {
-    @apply w-fit cursor-pointer rounded-lg bg-inovahc-green-800 px-3  py-2 font-semibold text-white transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none;
+    @apply w-fit cursor-pointer rounded-lg bg-flag-orange px-3  py-2 font-semibold text-white transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none;
     &:hover {
-      @apply bg-inovahc-green-500;
+      @apply bg-flag-lilac;
     }
     &.btn-menu {
-      @apply h-7 bg-white py-1 text-sm leading-3 text-inovahc-green-800;
+      @apply h-7 bg-white py-1 text-sm leading-3;
       &:hover {
-        @apply bg-inovahc-green-500 text-white;
+        @apply bg-flag-lilac text-white;
       }
       &.btn-menu-purple {
-        @apply bg-inovahc-purple-100 py-2;
+        @apply bg-flag-lilac py-2;
       }
     }
     &.btn-white {
-      @apply bg-white text-inovahc-green-800;
+      @apply text-flbg-flag-orange bg-white;
       &:hover {
-        @apply bg-inovahc-green-500 text-white;
+        @apply bg-flag-lilac text-white;
       }
     }
     &.btn-purple {
-      @apply bg-inovahc-purple-100 py-2 text-inovahc-green-800;
+      @apply text-flbg-flag-orange bg-flag-lilac py-2;
     }
     &.btn-outline {
-      @apply border-[1.5px] border-inovahc-green-800 bg-transparent text-inovahc-green-800;
+      @apply border-flbg-flag-orange text-flbg-flag-orange border-[1.5px] bg-transparent;
       &:hover {
-        @apply border-inovahc-green-500 text-inovahc-green-500;
+        @apply border-flabg-flag-lilac text-flabg-flag-lilac;
       }
     }
   }
   /* Icones / Botoes circulares / Small / White / Purple  */
   .btn-icon {
-    @apply flex h-7 w-7 items-center  justify-center rounded-full bg-inovahc-green-800  fill-white text-xsmall font-bold  text-white transition duration-300 ease-in-out disabled:bg-inovahc-gray-400 disabled:opacity-20 disabled:hover:bg-inovahc-gray-400;
+    @apply flex h-7 w-7 items-center  justify-center rounded-full bg-flag-orange  fill-white text-xsmall font-bold  text-white transition duration-300 ease-in-out disabled:bg-flag-gray disabled:opacity-20 disabled:hover:bg-flag-gray;
     svg {
       @apply -mt-[2px];
     }
     &.active,
     &:hover {
-      @apply bg-inovahc-green-500;
+      @apply bg-flag-lilac;
     }
     svg {
       @apply max-w-4;
@@ -218,345 +212,30 @@
 
     /*  Icone White */
     &.btn-icon-white {
-      @apply bg-white fill-inovahc-green-800 text-inovahc-green-800;
+      @apply bg-white;
       &.active,
       &:hover {
-        @apply bg-inovahc-green-500;
+        @apply bg-flag-lilac;
       }
     }
     /*  Icone Purple */
     &.btn-icon-purple {
-      @apply bg-inovahc-purple-100 fill-inovahc-green-800;
+      @apply bg-flag-lilac;
       &.active,
       &:hover {
-        @apply bg-inovahc-green-500;
+        @apply bg-flag-lilac;
       }
     }
   }
   /* Tags / Tag-Big*/
   .tag {
-    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-inovahc-blue-100 bg-inovahc-blue-100 px-2 py-1 text-sm font-semibold text-inovahc-blue-800 hover:border-inovahc-blue-800 hover:bg-white md:px-1 md:py-0.5;
+    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-flag-blue px-2 py-1 text-sm font-semibold hover:border-flag-blue-dark hover:bg-white md:px-1 md:py-0.5;
     &.tag-big {
       @apply px-3 py-1 text-sm font-semibold;
     }
   }
   /* Links / White / Small*/
   .link {
-    @apply cursor-pointer font-semibold text-inovahc-green-800 underline transition-all duration-300 ease-in-out hover:text-inovahc-green-500;
-    &.link-white {
-      @apply text-white hover:text-inovahc-green-500;
-    }
-    &.small {
-      @apply text-sm;
-    }
-  }
-  /* Formatacao dos forms */
-  .form-inovahc {
-    input,
-    textarea,
-    select {
-      @apply mt-0 block  border-0 border-b  border-inovahc-green-800  px-0.5 py-2  text-inovahc-green-800  placeholder:text-gray-400 focus:border-inovahc-green-500 
-    focus:text-inovahc-green-800 focus:ring-0;
-    }
-    input[type="checkbox"],
-    input[type="radio"] {
-      @apply h-5 w-5 rounded-md border-2 border-inovahc-green-800;
-    }
-    input[type="search"]::-webkit-search-cancel-button {
-      @apply relative h-[18px] w-[18px] bg-no-repeat;
-      -webkit-appearance: none;
-      background-image: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 15L2.99993 2.99993" stroke="%234B5563" stroke-width="2" stroke-linecap="round"/><path d="M3 15L15.0001 2.99993" stroke="%234B5563" stroke-width="2" stroke-linecap="round"/></svg>');
-    }
-
-    &.type-white {
-      input,
-      textarea,
-      select,
-      .multiselect,
-      .checkbox,
-      .radio {
-        @apply border-white text-inovahc-green-500 placeholder:text-inovahc-green-500
-       focus:text-white;
-      }
-    }
-  }
-  /* Select Dropdown personalizado */
-  .select-inovahc {
-    @apply relative w-full;
-
-    /* Botão */
-    .select-inovahc-button {
-      @apply relative flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl bg-inovahc-blue-800 px-4 py-3 text-white hover:opacity-90;
-      .chevron {
-        @apply transition-all ease-in-out;
-      }
-    }
-
-    /* Dropdown */
-    .select-inovahc-dropdown {
-      @apply absolute left-0 z-10 mt-1.5 hidden min-w-full flex-col gap-6 rounded-lg bg-white p-4 shadow-inovahc; /* Inicialmente oculto */
-
-      ul {
-        @apply grid gap-4;
-        &.two-colls {
-          @apply md:w-[460px] md:grid-cols-2;
-        }
-        li {
-          @apply flex items-center gap-3;
-        }
-      }
-    }
-
-    /* Exibe o dropdown quando tem a classe 'active' */
-    .select-inovahc-dropdown.active {
-      display: flex;
-    }
-  }
-}
-/* Utilitarios do projeto */
-@layer utilities {
-  /*   Card / Card-Content */
-  .card {
-    @apply w-full rounded-lg bg-white shadow-inovahc transition-all duration-300 ease-in-out;
-    &:hover {
-      @apply shadow-lg;
-    }
-    figure {
-      @apply h-auto  w-full rounded-t-lg;
-      img {
-        @apply max-h-32 w-full rounded-t-lg object-cover;
-      }
-    }
-    .card-content {
-      @apply flex flex-col gap-4 rounded-b-lg p-4 pb-6;
-      .card-header {
-        @apply flex flex-col gap-1;
-        .titulo {
-          @apply text-lg font-semibold text-inovahc-purple-800 md:text-base;
-        }
-        .data {
-          @apply text-xs;
-        }
-        .texto {
-          @apply text-sm md:text-xs;
-        }
-      }
-      .card-info {
-        @apply flex flex-col gap-3;
-        .representante {
-          .titulo {
-            @apply text-xs font-semibold text-inovahc-purple-800;
-          }
-          .nome {
-            @apply text-sm;
-          }
-          .email {
-            @apply text-xs font-semibold text-inovahc-green-800 underline;
-          }
-        }
-        .representante-more {
-          .titulo {
-            @apply text-xs font-semibold text-inovahc-purple-800;
-          }
-          .site {
-            @apply text-xs font-semibold text-inovahc-green-800 underline;
-          }
-        }
-      }
-      .card-read-more {
-        @apply font-semibold text-inovahc-green-800 underline;
-      }
-      .card-tags {
-        @apply flex flex-wrap gap-2;
-      }
-    }
-  }
-  /* Big Number */
-  .big-number {
-    @apply flex flex-row items-center justify-center gap-4 rounded-lg px-4 py-3 shadow-inovahc transition-all duration-300 ease-in-out md:flex-col md:gap-0;
-    &:hover {
-      @apply shadow-lg;
-    }
-    figure {
-      @apply mb-1;
-    }
-    .big-number-text {
-      @apply flex w-9/12 flex-col justify-center md:text-center;
-      .number {
-        @apply font-poppins text-4xl font-bold text-inovahc-purple-800;
-      }
-    }
-  }
-  /* Section Header */
-  section.temicon {
-    position: relative;
-  }
-  section.temicon::before {
-    @apply absolute left-0 top-0 block h-24 w-full bg-white content-[""] md:h-14;
-  }
-  .section-header {
-    @apply relative  mx-auto my-6 flex  flex-col md:my-0 md:w-full md:items-center md:justify-center;
-    figure {
-      /*   @apply relative ; */
-    }
-    .title {
-      @apply mb-4 mt-2 flex w-full font-poppins  text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
-    }
-  }
-  /* Section Banner */
-  .banner {
-    @apply relative flex gap-5 rounded-3xl  bg-inovahc-blue-100 px-5 py-10 pb-10  md:px-16;
-
-    .banner-container {
-      @apply relative flex flex-col justify-end gap-6 md:flex-row;
-    }
-    .figure-area {
-      @apply relative -mt-20 min-h-[120px]  md:mb-0  md:w-1/2;
-    }
-    .text-area {
-      @apply md:w-1/2;
-      .banner-title {
-        @apply mb-2 font-poppins  text-3xl text-inovahc-blue-800 md:mb-4;
-      }
-      button {
-        @apply w-fit cursor-pointer rounded-lg bg-inovahc-green-800 px-3  py-2 font-semibold text-white transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none;
-        &:hover {
-          @apply bg-inovahc-green-500;
-        }
-      }
-    }
-    figure {
-      @apply relative   justify-center;
-      .principal {
-        @apply h-auto  rounded-3xl object-cover  object-center;
-      }
-    }
-
-    /* Variações */
-    &.banner-blue {
-      @apply bg-inovahc-blue-100;
-    }
-    &.banner-green {
-      @apply bg-inovahc-green-800 text-white;
-      .banner-title {
-        @apply text-white;
-      }
-      button {
-        @apply bg-white text-inovahc-green-800;
-        &:hover {
-          @apply bg-inovahc-green-500 text-white;
-        }
-      }
-    }
-    &.banner-purple {
-      @apply bg-inovahc-purple-100 text-inovahc-purple-800;
-      .banner-title {
-        @apply text-inovahc-purple-800;
-      }
-    }
-  }
-  /* Modal */
-  .overlay {
-    @apply fixed left-0 top-0 z-10 hidden h-screen w-full bg-black bg-opacity-70;
-  }
-  .modal {
-    @apply fixed left-[50%]  top-[50%] z-20 hidden -translate-x-1/2 -translate-y-1/2 rounded-xl bg-white p-10;
-    .close {
-      @apply absolute -top-8 right-0 cursor-pointer;
-    }
-  }
-}
-/* Hero Slide */
-#hero-slide {
-  @apply bg-slate-600;
-  .splide__track {
-    .splide__list {
-      @apply min-h-[550px] md:min-h-[200px];
-      .splide__slide {
-        @apply relative;
-        figure {
-          @apply h-full max-h-[550px] w-full bg-inovahc-green-600 md:max-h-[600px];
-          img {
-            @apply h-full max-h-[550px] w-full object-cover object-center md:max-h-[600px] md:min-h-[600px];
-          }
-        }
-
-        img {
-        }
-        .hero-slide-area {
-          @apply absolute bottom-10  w-full;
-          .hero-slide-card {
-            @apply container mx-auto px-6;
-            .hero-slide-texto {
-              @apply w-fit max-w-[380px] rounded-2xl bg-inovahc-green-800 p-6 text-xl text-white opacity-90 shadow-lg md:text-2xl;
-              .highlight {
-                @apply font-poppins text-3xl font-bold text-inovahc-green-300 md:text-6xl;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/* Noticias Slide */
-#noticias-slide {
-  @apply mb-8 w-full md:mb-0;
-  .splide__track {
-    @apply w-full overflow-visible pb-10   md:pb-20 md:pt-10;
-    .splide__list {
-      .splide__slide {
-        @media (max-width: 639px) {
-          max-width: 90%;
-        }
-      }
-    }
-  }
-  .splide__pagination {
-    @apply flex -translate-y-2 md:hidden;
-  }
-  .splide__arrows {
-    @apply absolute bottom-2 left-1/2  z-40 w-[120px] translate-x-[-50%] transform gap-0 bg-black md:bottom-10;
-  }
-  .splide__arrow--next,
-  .splide__arrow--prev,
-  .splide__arrow {
-    @apply flex border-2  border-inovahc-green-300 bg-inovahc-green-800 p-2 focus:outline-0;
-
-    svg {
-      @apply border-inovahc-green-300 fill-white;
-    }
-  }
-  .splide__arrow:hover {
-    @apply border-inovahc-purple-300 bg-inovahc-gray-400;
-    border: solid 2px #827bc6 !important;
-    svg {
-      @apply fill-inovahc-purple-300;
-    }
-  }
-}
-
-/* Ajustes feitos no dia 16/03 */
-ul .ms,
-li .ms,
-.ms li {
-  @apply border-none;
-  &:hover {
-    @apply border-none;
-  }
-}
-
-/* Ajuste Dia 17/03 */
-.bg-no-mobile {
-  @apply bg-[right_bottom] bg-no-repeat;
-  @media (max-width: 600px) {
-    background-image: none !important;
-  }
-}
-
-body {
-  &.scroll-lock {
-    @apply bg-red-800;
-    overflow: hidden;
+    @apply cursor-pointer font-semibold underline transition-all duration-300 ease-in-out;
   }
 }
