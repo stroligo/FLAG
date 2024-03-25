@@ -1,6 +1,7 @@
+'use client';
 import Acesso from '@/components/acesso';
 
-export default async function Home() {
+export default function Home() {
   return (
     <main>
       <h1>Minha Página Inicial</h1>
